@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <header id="home">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">RockY</label>
+      <ul>
+        <li><a href="#" class="active">Calculator</a></li>
+        <li><a href="https://rakeshgombi.github.io/lovecalculator/">Love Calculator</a></li>
+        <li><a href="https://github.com/Rakeshgombi">Github Profile</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="calculator" name="calc">
+        <h1>Calsio</h1>
+        <h2>BF-00ms</h2>
+        <form name="calc">
+          <input type="text" name="screen" id="screen" readonly placeholder="888888888888888888888888888888888888">
+        </form>
+        <table>
+          <tr>
+            <td> <button class='btn' onclick="document.calc.screen.value = '' "
+                style="background-color: red; color: white;">c</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '(' ">(</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += ')' ">)</button></td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '/' ">/</button> </td>
+          </tr>
+          <tr>
+            <td> <button class='btn' onclick="document.calc.screen.value += '7' ">7</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '8' ">8</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '9' ">9</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '*' ">x</button> </td>
+          </tr>
+          <tr>
+            <td> <button class='btn' onclick="document.calc.screen.value += '4' ">4</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '5' ">5</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '6' ">6</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '-' ">-</button> </td>
+          </tr>
+          <tr>
+            <td> <button class='btn' onclick="document.calc.screen.value += '7' ">7</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '8' ">8</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '9' ">9</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '+' ">+</button> </td>
+          </tr>
+          <tr>
+            <td> <button class='btn' onclick="document.calc.screen.value += '0' ">0</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '00' ">00</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value += '.' ">.</button> </td>
+            <td> <button class='btn' onclick="document.calc.screen.value = eval(calc.screen.value)"
+                style="background-color: greenyellow;">=</button> </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </header>
+
+</body>
+
+
+</html>

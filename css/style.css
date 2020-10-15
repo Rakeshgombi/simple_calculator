@@ -1,0 +1,178 @@
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    }
+
+    body {
+      background: url(../images/image.jpg) no-repeat center center/cover;
+      height: 100vh;
+
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* text-align: center; */
+      /* margin-top: 23px; */
+      height: 100vh;
+    }
+
+    .calculator {
+      display: inline-block;
+      padding: 23px;
+      border-bottom-left-radius: 20%;
+      border-bottom-right-radius: 20%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      /* background-color: aliceblue; */
+      background-image: linear-gradient( aliceblue, rgb(140, 198, 250));
+      padding: 10px 10px 45px 10px;
+     }
+
+    table {
+      margin: 20px auto;
+
+    }
+
+    input {
+      text-align: right;
+      padding: 10px 20px;
+      font-size: 34px;
+      /* width: 100%;  */
+      /* border: 5px solid #244624; */
+      border-radius: 20px;
+      outline: none;
+      border-radius: 4px;
+      /* text-align: center; */
+      box-shadow: inset 0px 0px 9px 1px #333;
+      /* padding: 10px 5px; */
+    }
+
+    .btn {
+      font-size: 40px;
+      font-weight: bold;
+      border-radius: 20px;
+      width: 102px;
+      height: 58px;
+      background-color: rgb(255, 255, 255);
+      cursor: pointer;
+      margin: 5px;
+      outline: none;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      border: none;
+      /* color: rgb(255, 255, 255); */
+      box-shadow: 0px 0px 7px 2px #333;
+      outline: none;
+    }
+
+    .btn:hover {
+      box-shadow: 1px 1px 8px 3px #333;
+    }
+
+    .btn:active {
+      box-shadow: inset 0px 0px 3px 1px #333;
+      /* box-shadow: 2px 2px 7px 2px #333; */
+    }
+    body{
+      font-family: montserrat;
+      }
+    
+    #home {
+      position: relative;
+    }
+    nav{
+        background: #0082e6;
+        height: 80px;
+        top: 0;
+        width: 100%;
+        /* position: fixed; */
+      }
+    label.logo{
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+    nav ul{
+    float: right;
+    margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 5px;
+    }
+    a.active, a:hover{
+     background: #1b9bff; 
+     transition: .5s;
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+    
+    @media (max-width: 952px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 858px){
+      nav{
+        position: fixed;
+      } 
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+        }
+        a:hover, a.active{
+          background: none;
+          color: #0082e6;
+        }
+        #check:checked ~ ul{
+          left: 0px;
+        }
+    }
