@@ -1,1 +1,1 @@
-# standard_calculator
+# simple_calculator
