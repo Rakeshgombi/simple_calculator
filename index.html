@@ -11,7 +11,7 @@
 
 <body>
   <header id="home">
-    <nav>
+   <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -23,12 +23,14 @@
         <li><a href="https://github.com/Rakeshgombi">Github Profile</a></li>
       </ul>
     </nav>
+  </header>
+  <section>
     <div class="container">
       <div class="calculator" name="calc">
         <h1>Calsio</h1>
         <h2>BF-00ms</h2>
         <form name="calc">
-          <input type="text" name="screen" id="screen" readonly placeholder="888888888888888888888888888888888888">
+          <input type="text" name="screen" id="screen" readonly>
         </form>
         <table>
           <tr>
@@ -63,12 +65,10 @@
             <td> <button class='btn' onclick="document.calc.screen.value = eval(calc.screen.value)"
                 style="background-color: greenyellow;">=</button> </td>
           </tr>
-
         </table>
       </div>
     </div>
-  </header>
-
+  </section>
 </body>
 
 
