@@ -1,204 +1,184 @@
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-    }
-
-    body {
-      background: url(../images/image.jpg) no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-section{
-  max-width: 100%;
-  margin-top: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
 }
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* height: 90%; */
-    }
 
-    .calculator {
-      display: inline-block;
-      padding: 23px;
-      border-bottom-left-radius: 20%;
-      border-bottom-right-radius: 20%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-image: linear-gradient( aliceblue, rgb(140, 198, 250));
-      padding: 10px 10px 45px 10px;
-      max-width: 90%;
-      max-height: 100%;
-     }
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  background: url("../images/image.jpg") no-repeat center center/cover;
+}
 
-    table {
-      margin: 20px auto;
-      width: 100%;
-      height: 100%;
-    }
-    table tbody{
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-    table tbody tr{
-      width: 100%;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    table tbody td{
-      /* margin: 20px auto; */
-      width: 22%;
-      margin: 5px;
-      height: 100%;
-    }
-    input {
-      text-align: right;
-      padding: 10px 20px;
-      font-size: 34px;
-      width: 100%; 
-      border-radius: 20px;
-      outline: none;
-      border-radius: 4px;
-      box-shadow: inset 0px 0px 9px 1px #333;
-    }
+#home {
+  display: block;
+  position: relative;
+}
 
-    .btn {
-      font-size: 40px;
-      font-weight: bold;
-      width: 90%;
-      height: 90%;
-      background-color: rgb(255, 255, 255);
-      cursor: pointer;
-      margin: 5px;
-      border: none;
-      outline: none;
-      border-bottom-left-radius: 40%;
-      border-bottom-right-radius: 40%;
-      border-top-left-radius: 10%;
-      border-top-right-radius: 10%;
-      /* color: rgb(255, 255, 255); */
-      box-shadow: 0px 0px 7px 2px #333;
-    }
-    .btn:hover {
-      box-shadow: 1px 1px 8px 3px #333;
-    }
-    .btn:active {
-      box-shadow: inset 0px 0px 3px 1px #333;
-      /* box-shadow: 2px 2px 7px 2px #333; */
-    }
-    body{
-      font-family: montserrat;
-      }
-      #home{
-        position: relative;
-        width: 100%;
-        display: inline-block;
-      }
-    nav{
-        background: #0082e6;
-        height: 80px;
-        top: 0;
-        width: 100%;
-        /* position: fixed; */
-      }
-    label.logo{
-      color: white;
-      font-size: 35px;
-      line-height: 80px;
-      padding: 0 100px;
-      font-weight: bold;
-    }
-    nav ul{
-    float: right;
-    margin-right: 20px;
-    }
-    nav ul li{
-      display: inline-block;
-      line-height: 80px;
-      margin: 0 5px;
-    }
-    nav ul li a{
-      color: white;
-      font-size: 17px;
-      text-transform: uppercase;
-      padding: 7px 13px;
-      border-radius: 5px;
-    }
-    a.active, a:hover{
-     background: #1b9bff; 
-     transition: .5s;
-    }
-    .checkbtn{
-      font-size: 30px;
-      color: white;
-      float: right;
-      line-height: 80px;
-      margin-right: 40px;
-      cursor: pointer;
-      display: none;
-    }
-    #check{
-      display: none;
-    }
-    
-    @media (max-width: 952px){
-      label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-      }
-      nav ul li a{
-        font-size: 16px;
-      }
-    }
-    @media (max-width: 858px){
-      body {
-        max-width: 100%;
-      height: 100vh;
-      /* justify-content: space-between; */
-      display: block;
-      }
-      section{
-        margin-bottom: 200px;
-        max-width: 90%;
-      }
-      nav{
-        position: absolute;
-      } 
-      .checkbtn{
-        display: block;
-      }
-      ul{
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        background: #2c3e50;
-        top: 80px;
-        left: 100%;
-        text-align: center;
-        transition: all .5s;
-      }
-      nav ul li{
-        display: block;
-        margin: 50px;
-        line-height: 30px;
-      }
-      nav ul li a{
-        font-size: 20px;
-        }
-        a:hover, a.active{
-          background: none;
-          color: #0082e6;
-        }
-        #check:checked ~ ul{
-          left: 0px;
-        }
-    }
+nav {
+  background: #0082e6;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  /* position: fixed; */
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 5px;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0px;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.calculator {
+  max-width: 90%;
+  margin: auto;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #d7faf9;
+  padding: 10px 10px 45px 10px;
+}
+
+td {
+  width: 24%;
+  padding: 5px;
+}
+
+.btn {
+  display: block;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  margin: 5px;
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  font-size: 1em;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 9px 1px #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 6px 0px #000000;
+}
+
+input {
+  text-align: right;
+  width: 99%;
+  height: 100%;
+  margin: auto;
+  background-color: #bdfbce;
+  font-size: 30px;
+  padding: 10px 4px;
+  box-shadow: inset 0px 0px 12px 0px #555454;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
