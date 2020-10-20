@@ -20,14 +20,14 @@
       <ul>
         <li><a href="#" class="active">Calculator</a></li>
         <li><a href="https://rakeshgombi.github.io/lovecalculator/">Love Calculator</a></li>
-        <li><a href="https://github.com/Rakeshgombi">Github Profile</a></li>
+        <li><a href="#">Github Profile</a></li>
       </ul>
     </nav>
   </header>
   <section>
     <div class="calculator" name="calc">
-      <h1>Calsio</h1>
-      <h2>BF-00ms</h2>
+      <h1>CALCULATOR</h1>
+      <!-- <h2>BF-00ms</h2> -->
       <table>
         <tr>
           <td colspan="4">
@@ -36,6 +36,43 @@
             </form>
           </td>
         </tr>
+        <tr>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} + ${calc.screen.value * 0.28}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 9px;">+</sup>28%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} + ${calc.screen.value * 0.18}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 9px;">+</sup>18%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} + ${calc.screen.value * 0.12}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 9px;">+</sup>12%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} + ${calc.screen.value * 0.05}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 9px;">+</sup>5%</button> </td>
+        </tr>
+        <tr>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} - ${calc.screen.value * 0.28}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 10px;">-</sup>28%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} - ${calc.screen.value * 0.18}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 10px;">-</sup>18%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} - ${calc.screen.value * 0.12}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 10px;">-</sup>12%</button> </td>
+          <td> <button class='btn'
+              onclick="document.calc.screen.value = eval(`${calc.screen.value} - ${calc.screen.value * 0.05}`)"><sup
+                style="font-size: 7px;">GST</sup>
+              <sup style="font-size: 10px;">-</sup>5%</button> </td>
+        </tr>
+
         <tr>
           <td> <button class='btn' onclick="document.calc.screen.value = '' "
               style="background-color: red; color: white;">c</button> </td>
