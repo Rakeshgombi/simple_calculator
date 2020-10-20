@@ -7,7 +7,6 @@
 }
 
 body {
-  height: 120vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -160,6 +159,7 @@ td {
   height: 90%;
   padding: 10px;
   font-size: 1em;
+  font-weight: bolder;
   outline: none;
   box-sizing: border-box;
   box-shadow: 1px 1px 9px 1px #000000;
