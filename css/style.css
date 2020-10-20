@@ -169,6 +169,7 @@ tr:nth-child(2) td .btn, tr:nth-child(3) td .btn{
   outline: none;
   cursor: pointer;
   transition: 0.2s all;
+  padding: 10px 4px;
 }
 
 .btn:active {
