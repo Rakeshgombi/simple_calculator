@@ -25,7 +25,7 @@ nav {
   height: 80px;
   top: 0;
   width: 100%;
-/*   position: fixed; */
+  /* position: fixed; */
 }
 
 label.logo {
@@ -78,7 +78,7 @@ a:hover {
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   nav ul li a {
@@ -88,7 +88,7 @@ a:hover {
 
 @media (max-width: 858px) {
   nav{
-    position: fixed;
+    position: sticky;
   }
   .checkbtn {
     display: block;
@@ -145,7 +145,7 @@ section {
 
 td {
   width: 24%;
-  padding: 5px 2px;
+  padding: 5px;
 }
 tr:nth-child(2) td .btn, tr:nth-child(3) td .btn{
   background-color: rgb(1, 252, 252);
@@ -160,7 +160,6 @@ tr:nth-child(2) td .btn, tr:nth-child(3) td .btn{
   margin: 5px;
   width: 90%;
   height: 90%;
-  padding: 10px 2px;
   font-size: 1em;
   /* font-weight: 500; */
   outline: none;
@@ -183,7 +182,7 @@ input {
   margin: auto;
   background-color: #bdfbce;
   font-size: 30px;
-  padding: 10px 5px;
+  padding: 10px 4px;
   box-shadow: inset 0px 0px 12px 0px #555454;
   border-radius: 10px;
   border: none;
